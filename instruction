@@ -1,0 +1,9 @@
+pull centos from dockerhub.                         --  FROM
+install java                                        --  RUN
+create /opt/tomcat directory                        --  RUN
+change work directory to /opt/tomcat                --  WORKDIR
+download tomcat packages                            --  ADD/RUN
+extract tar.gz file                                 --  RUN
+rename to tomcat directory                          --  RUN
+tell to docker that it runs on port 8080            --  EXPOSE
+start tomcat service                                --  CMD
